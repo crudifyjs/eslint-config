@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "devDependencies": {
+    "@crudifyjs/eslint-config-base": "workspace:0.0.2",
+    "eslint": "7.2.0",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  }
+}
