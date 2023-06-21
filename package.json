@@ -9,7 +9,7 @@
     "@crudifyjs/eslint-config-base": "workspace:0.0.2",
     "eslint": "7.6.0",
     "husky": "4.2.5",
-    "lint-staged": "10.2.10"
+    "lint-staged": "12.5.0"
   },
   "husky": {
     "hooks": {
